@@ -2,6 +2,14 @@ SELECT * FROM DEPARTMENT
 
 SELECT * FROM STUDENT
 
+SELECT * FROM PROFESSOR
+
+SELECT * FROM COURSE
+
+SELECT * FROM CLASS
+
+SELECT * FROM TAKES
+
 create table department 
 	(
 		dept_id 		varchar2(10),
