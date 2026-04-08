@@ -37,7 +37,7 @@ select 	s.name, d.dept_name -- 재명명
 from 	student s, department d
 where 	s.dept_id = d.dept_id
 
-SELECT s2.name, s2.address -- 같은 테이블에서의 재명명을 이용한 JOIN문
+SELECT s2.name, s2.address -- 같은 테이블에서의 재명명을 이용한 JOIN문(셀프조인)
 FROM STUDENT s1, student s2
 WHERE s1.address=s2.address AND s1.name = '김광식' -- 김광식과 주소가 같은 학생의 이름과 주소
 
@@ -74,9 +74,7 @@ minus
 select stu_id	from takes
 where grade = 'A+'
 
-select title, credit, year, semester, division
-FROM class c1, course c2									-- 외부 조인으로 두 테이블의 값을 합쳐서 보기
-WHERE c1.COURSE_ID = c2.COURSE_ID 
+
 
 
 
